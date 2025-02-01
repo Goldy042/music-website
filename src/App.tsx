@@ -6,8 +6,8 @@ import { AudioPlayer } from "./components/AudioPlayer";
 import { AudioProvider } from "./contexts/AudioContext";
 export function App() {
   return <AudioProvider>
-      <div className="flex flex-col h-screen bg-black text-white">
-        <div className="flex flex-1 overflow-hidden">
+      <div className="flex flex-col h-screen bg-black text-white ">
+        <div className="flex flex-1 overflow-hidden ">
           <Sidebar />
           <main className="flex-1 flex flex-col min-w-0">
             <header className="flex-none p-8">
@@ -24,7 +24,7 @@ export function App() {
                 </div>
               </div>
             </header>
-            <div className="flex-1 overflow-y-auto min-h-0">
+            <div className="flex-1 overflow-y-auto min-h-0 no-scrollbar">
               <Outlet />
             </div>
           </main>
